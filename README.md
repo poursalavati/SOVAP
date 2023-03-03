@@ -79,3 +79,6 @@ The order of activating the environments is important and prevents errors in pip
 3.  Run the pipeline script:
 
     `python Run_SOVAP.py`
+
+
+<img src="https://user-images.githubusercontent.com/35867448/222854685-148ee0fc-b8c5-4792-a58e-f51d46ed5fc3.png" alt= “” height="500">
