@@ -133,3 +133,18 @@ This is a compressed database built from RefSeq genomes of Bacteria and Archaea.
     tar -xzvf p_compressed_2018_4_15.tar.gz -C centrifuge
     rm p_compressed_2018_4_15.tar.gz
 
+### Megan and NCBI Viral database
+The Megan database is optional and only needed if the user decides to use the `--megan` flag for the pipeline. 
+The `--megan` flag will run the DIAMOND analysis and _DAA_-_Meganizer_ step and will require both the NCBI virus database (in diamond format) and the Megan database.
+
+To download Megan database (megan-map-Feb2022.db.zip) use its official website:
+https://software-ab.cs.uni-tuebingen.de/download/megan6/welcome.html  
+
+To run Diamond + Megan analysis You can download our pre-indexed Genbank database from here: 
+https://zenodo.org/record/7697520
+
+## Outputs
+
+## Tools citations
+
+## Citation
