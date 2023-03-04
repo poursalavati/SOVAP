@@ -120,7 +120,7 @@ To prepare the IMG/VR database for use with the Diamond analysis step in SOVAP, 
     
 Note: Due to the size of the IMG/VR database, building the Diamond database may take several hours or more. It is recommended to use a computer with high processing power and memory for this step (final db size will be more than 65 GB).
 
-While users have the option to use a Genebank virus database, it is strongly recommended to use the IMG/VR database for the best results. The IMG/VR database is a comprehensive and regularly updated database of curated viral genomes that covers a wide range of viral diversity.
+While users have the option to use a Genbank virus database, it is strongly recommended to use the IMG/VR database for the best results. The IMG/VR database is a comprehensive and regularly updated database of curated viral genomes that covers a wide range of viral diversity.
 
 ### Centrifuge 
 
