@@ -86,6 +86,18 @@ conda activate --stack SOVAP
 python Run_SOVAP.py
 ```
 
+Example command - 1 (IMG/VR database):
+
+```
+python Run_SOVAP.py -r1 Virome_R1_001.fastq.gz -r2 Virome_R2_001.fastq.gz -t 25 -x centrifuge/p_compressed/p_compressed -g genomad_db/ -d Diamond/IMGVR.dmnd --end_to_end
+```
+
+Example command - 2 (NCBI database + DIAMOND-MEGAN):
+
+```
+python Run_SOVAP.py -r1 Virome_R1_001.fastq.gz -r2 Virome_R2_001.fastq.gz -t 25 -x centrifuge/p_compressed/p_compressed -g genomad_db/ -d Diamond/DIAMOND_viral_database_GB.dmnd -md megan-map/megan-map-Feb2022.db --megan --end_to_end
+```
+
 <img src="https://user-images.githubusercontent.com/35867448/222854685-148ee0fc-b8c5-4792-a58e-f51d46ed5fc3.png" alt= “” height="500">
 
 
@@ -101,7 +113,19 @@ To run the SOVAP pipeline in batch mode you can use the `SOVAP_BatchMode.py`.
 ```
 python SOVAP_BatchMode.py
 ```
-    
+
+Example command - 1 (IMG/VR database - Assuming that the current folder contains multiple paired-end fastq files):
+
+```
+python SOVAP_BatchMode.py -i . -o .  -t 25 -x centrifuge/p_compressed/p_compressed -g genomad_db/ -d Diamond/IMGVR.dmnd --end_to_end
+```
+
+
+Example command - 2 (NCBI database + DIAMOND-MEGAN - Assuming that the current folder contains multiple paired-end fastq files):
+
+```
+python SOVAP_BatchMode.py -i . -o . -t 25 -x centrifuge/p_compressed/p_compressed -g genomad_db/ -d Diamond/DIAMOND_viral_database_GB.dmnd -md megan-map/megan-map-Feb2022.db --megan --end_to_end
+```
 
 <img src="https://user-images.githubusercontent.com/35867448/222864393-0461ba16-1cfc-41f9-bb76-dbc234f5a964.png" alt= “” height="400">
 
