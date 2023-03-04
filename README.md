@@ -64,19 +64,24 @@ Here are the steps to run the pipeline:
 
 1.  Clone the repository:
 	
-	`git clone https://github.com/poursalavati/SOVAP.git`
+```
+git clone https://github.com/poursalavati/SOVAP.git`
   
-	`cd SOVAP`
+cd SOVAP
+```
 	
-2.  Activate the Conda environment:
-The order of activating the environments is important and prevents errors in pipeline execution
+2.  Activate the Conda environment:  
+The order of activating the environments is important and prevents errors in pipeline execution.  
 
-    conda activate centrifuge
-    conda activate --stack megan
-    conda activate --stack genomad
-    conda activate --stack SOVAP
+```
+conda activate centrifuge
+conda activate --stack megan
+conda activate --stack genomad
+conda activate --stack SOVAP
+```
+	
+3.  Run the SOVAP pipeline in normal mode:
 
-3.  Run the pipeline script:
 
     `python Run_SOVAP.py`
 
