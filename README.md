@@ -99,3 +99,37 @@ To run the SOVAP pipeline in batch mode and for multiple datasets you can use th
     
 
 <img src="https://user-images.githubusercontent.com/35867448/222864393-0461ba16-1cfc-41f9-bb76-dbc234f5a964.png" alt= “” height="400">
+
+
+## Databases
+
+### IMG/VR 
+To prepare the IMG/VR database for use with the Diamond analysis step in SOVAP, follow these steps:
+
+1.  Download the latest IMG/VR database (version 4) from the official website ([https://img.jgi.doe.gov/vr/](https://img.jgi.doe.gov/vr/)).
+    
+2.  Extract the database files to a directory.
+    
+3.  Use the Diamond software to build a Diamond database from the IMG/VR FASTA files. This can be done using the following command:
+
+`diamond makedb --in /path/to/imgvr/fasta/files --db /path/to/output/database --threads 32`
+
+1.  This command will create a new Diamond database file in the specified output directory using the IMG/VR FASTA files as input. You can adjust the number of threads used by specifying a different value after `--threads`.
+    
+2.  Once the Diamond database is built, you can use it with SOVAP by specifying the path to the database file in the `-d , --diamond_db` argument when running the pipeline.
+    
+Note: Due to the size of the IMG/VR database, building the Diamond database may take several hours or more. It is recommended to use a computer with high processing power and memory for this step (final db size will be more than 65 GB).
+
+While users have the option to use a Genebank virus database, it is strongly recommended to use the IMG/VR database for the best results. The IMG/VR database is a comprehensive and regularly updated database of curated viral genomes that covers a wide range of viral diversity.
+
+### Centrifuge 
+
+For the bacterial database, the pipeline uses the Centrifuge database, which contains pre-indexed  Bacteria and Archaea and is used for the classification of reads to bacterial taxa as well as the subtraction of bacterial contamination.
+
+This is a compressed database built from RefSeq genomes of Bacteria and Archaea. The following commands will download the database:
+
+    mkdir centrifuge
+    wget https://genome-idx.s3.amazonaws.com/centrifuge/p_compressed_2018_4_15.tar.gz
+    tar -xzvf p_compressed_2018_4_15.tar.gz -C centrifuge
+    rm p_compressed_2018_4_15.tar.gz
+
