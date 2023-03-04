@@ -11,7 +11,7 @@ The integration of these tools offers a reliable and effective means of taxonomy
 
 By integrating the SOVAP pipeline with **IMG/VR** and **geNomad**, it is possible to identify a wider range of viruses, including those that were previously unknown.
 
-The **bunch-mode** script allows for the processing of multiple datasets using the SOVAP pipeline. This feature is particularly useful for **large-scale** analyses, such as those involving multiple environmental samples or large sequencing datasets.
+The **batch-mode** script allows for the processing of multiple datasets using the SOVAP pipeline. This feature is particularly useful for **large-scale** analyses, such as those involving multiple environmental samples or large sequencing datasets.
 
 ## Requirements and Dependencies
 To successfully run the SOVAP pipeline, your system must have the necessary software installed and accessible through the system's path:
@@ -89,13 +89,13 @@ conda activate --stack SOVAP
 <img src="https://user-images.githubusercontent.com/35867448/222854685-148ee0fc-b8c5-4792-a58e-f51d46ed5fc3.png" alt= “” height="500">
 
 
-## Running the Pipeline - Bunch Mode
+## Running the Pipeline - Batch Mode
 
-To run the SOVAP pipeline in bunch mode and for multiple datasets you can use the `SOVAP_BunchMode.py`.   
+To run the SOVAP pipeline in batch mode and for multiple datasets you can use the `SOVAP_BatchMode.py`.   
 > Note: To run in batch mode, both scripts should be in the same directory
 
 
-    `python SOVAP_BunchMode.py`
+    `python SOVAP_BatchMode.py`
+    
 
-
-<img src="https://user-images.githubusercontent.com/35867448/222862291-f570a525-5a5f-4987-aef0-b34cfe2b66e4.png" alt= “” height="400">
+<img src="https://user-images.githubusercontent.com/35867448/222864393-0461ba16-1cfc-41f9-bb76-dbc234f5a964.png" alt= “” height="400">
