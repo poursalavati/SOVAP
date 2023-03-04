@@ -87,3 +87,15 @@ conda activate --stack SOVAP
 
 
 <img src="https://user-images.githubusercontent.com/35867448/222854685-148ee0fc-b8c5-4792-a58e-f51d46ed5fc3.png" alt= “” height="500">
+
+
+## Running the Pipeline - Bunch Mode
+
+To run the SOVAP pipeline in bunch mode and for multiple datasets you can use the `SOVAP_BunchMode.py`.   
+> Note: To run in batch mode, both scripts should be in the same directory
+
+
+    `python SOVAP_BunchMode.py`
+
+
+<img src="https://user-images.githubusercontent.com/35867448/222862291-f570a525-5a5f-4987-aef0-b34cfe2b66e4.png" alt= “” height="400">
