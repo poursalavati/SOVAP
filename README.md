@@ -193,3 +193,17 @@ Here is a tree diagram that shows the directory structure of the "outputs" direc
 ## Citation
 
 ## Tools citations
+
+|Tools|Web|Cite
+|--|--|--|
+|geNomad and IMG/VR 4|[Link](https://github.com/apcamargo/genomad)  |[Paper](https://doi.org/10.1093/nar/gkac1037)
+|DIAMOND|[Link](https://github.com/bbuchfink/diamond)  |[Paper](https://doi.org/10.1038/nmeth.3176)
+|MEGAN|[Link](http://megan.informatik.uni-tuebingen.de/)  |[Paper](https://doi.org/10.1186/s13062-018-0208-7)
+|Centrifuge|[Link](https://ccb.jhu.edu/software/centrifuge/)  |[Paper](https://doi.org/10.1101/gr.210641.116)
+|DIAMOND-MEGAN|[Link](https://uni-tuebingen.de/fakultaeten/mathematisch-naturwissenschaftliche-fakultaet/fachbereiche/informatik/lehrstuehle/algorithms-in-bioinformatics/software/megan6/)  |[Paper](https://doi.org/10.1002/cpz1.59)
+|Fastp|[Link](https://github.com/OpenGene/fastp)  |[Paper](https://doi.org/10.1093/bioinformatics/bty560)
+|Megahit|[Link](https://github.com/voutcn/megahit)  |[Paper](https://doi.org/10.1093/bioinformatics/btv033)
+|BWA-mem|[Link](https://github.com/lh3/bwa)  |[Paper](https://doi.org/10.48550/arXiv.1303.3997)
+|CD-HIT|[Link](http://cd-hit.org/)  |[Paper](https://doi.org/10.1093/bioinformatics/bts565)
+|Seqkit|[Link](https://bioinf.shenwei.me/seqkit/)  |[Paper](https://doi.org/10.1371/journal.pone.0163962)
+|Samtools|[Link](http://www.htslib.org/)  |[Paper](https://doi.org/10.1371/journal.pone.0163962)|
