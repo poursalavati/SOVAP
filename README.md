@@ -91,7 +91,11 @@ conda activate --stack SOVAP
 
 ## Running the Pipeline - Batch Mode
 
-To run the SOVAP pipeline in batch mode and for multiple datasets you can use the `SOVAP_BatchMode.py`.   
+Batch mode in SOVAP allows for efficient analysis of large datasets by running the pipeline on multiple paired-end fastq files. 
+The user can provide a directory containing all the files to be processed. The pipeline will automatically loop through all files and run the selected options for each dataset, saving the results in separate output directories.
+
+To run the SOVAP pipeline in batch mode you can use the `SOVAP_BatchMode.py`.   
+
 > Note: To run in batch mode, both scripts should be in the same directory
 
 
