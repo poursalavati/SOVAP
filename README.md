@@ -1,5 +1,6 @@
 # SOVAP v.1.3
 ## _Soil Virome Analysis Pipeline_
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7700081.svg)](https://doi.org/10.5281/zenodo.7700081)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7697520.svg)](https://doi.org/10.5281/zenodo.7697520)
 
 #### Description
@@ -100,7 +101,7 @@ Example command - 2 (NCBI database + DIAMOND-MEGAN):
 python Run_SOVAP.py -r1 Virome_R1_001.fastq.gz -r2 Virome_R2_001.fastq.gz -t 25 -x centrifuge/p_compressed/p_compressed -g genomad_db/ -d Diamond/DIAMOND_viral_database_GB.dmnd -md megan-map/megan-map-Feb2022.db --megan --end_to_end
 ```
 
-<img src="https://user-images.githubusercontent.com/35867448/222854685-148ee0fc-b8c5-4792-a58e-f51d46ed5fc3.png" alt= “” height="500">
+<img src="https://user-images.githubusercontent.com/35867448/222979484-e5838152-c2b0-4895-b55c-14afcc99a2e6.png" alt= “” height="450">
 
 
 ## Running the Pipeline - Batch Mode
@@ -129,8 +130,7 @@ Example command - 2 (NCBI database + DIAMOND-MEGAN - Assuming that the current f
 python SOVAP_BatchMode.py -i . -o . -t 25 -x centrifuge/p_compressed/p_compressed -g genomad_db/ -d Diamond/DIAMOND_viral_database_GB.dmnd -md megan-map/megan-map-Feb2022.db --megan --end_to_end
 ```
 
-<img src="https://user-images.githubusercontent.com/35867448/222864393-0461ba16-1cfc-41f9-bb76-dbc234f5a964.png" alt= “” height="400">
-
+<img src="https://user-images.githubusercontent.com/35867448/222979327-5fa10861-3491-482c-99f5-27f718ce4c22.png" alt= “” height="450">
 
 ## Databases
 
