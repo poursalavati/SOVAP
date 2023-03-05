@@ -1,5 +1,6 @@
 # SOVAP v.1.3
 ## _Soil Virome Analysis Pipeline_
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7697520.svg)](https://doi.org/10.5281/zenodo.7697520)
 
 #### Description
 The study of viral communities in complex environmental samples, such as **soil**, can provide valuable insights into the diversity and functions of viral communities in the ecosystem. However, processing and analyzing of virome data can be a challenging task that requires the integration of various computational tools and techniques.
