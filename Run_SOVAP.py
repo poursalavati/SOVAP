@@ -288,7 +288,7 @@ def main():
           print(f"Skipping this step because output already exists")
 
       # Running geNomad
-      print("\033[94m>:::> Start Module 4: Classification of viral contigs <:::<\033[0m")
+      print("\033[94m>:::> Start Module 4: Identification of viral contigs <:::<\033[0m")
       # Check if output files exist
       if not os.path.exists("4_geNomad_Output"):
       
