@@ -7,7 +7,7 @@
  - [Requirements and Dependencies](https://github.com/poursalavati/SOVAP#Requirements-and-Dependencies)
  - [Installation](https://github.com/poursalavati/SOVAP#Installation)
  - [Running the Pipeline - Normal Mode](https://github.com/poursalavati/SOVAP#Running-the-Pipeline---Normal-Mode)
- - [Running the Pipeline - Batch Mode](https://github.com/poursalavati/SOVAP#Running-the-Pipeline---Batch Mode)
+ - [Running the Pipeline - Batch Mode](https://github.com/poursalavati/SOVAP#Running-the-Pipeline---Batch-Mode)
  - [Databases](https://github.com/poursalavati/SOVAP#Databases)
  - [Outputs](https://github.com/poursalavati/SOVAP#Outputs)
  - [Citation](https://github.com/poursalavati/SOVAP#Citation)
