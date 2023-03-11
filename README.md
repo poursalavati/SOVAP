@@ -231,6 +231,9 @@ Here is a tree diagram that shows the directory structure of the "outputs" direc
     
 
 ## Citation
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7700081.svg)](https://doi.org/10.5281/zenodo.7700081)
+
+>Poursalavati A. poursalavati/SOVAP: SOVAP v1.3.0 (v1.3.0). Zenodo. 2023; 10.5281/zenodo.7700081.
 
 ## Tools citations
 
