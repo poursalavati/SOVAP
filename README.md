@@ -4,6 +4,15 @@
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7697520.svg)](https://doi.org/10.5281/zenodo.7697520)
 
  - [Description](https://github.com/poursalavati/SOVAP#Description)
+ - [Requirements and Dependencies](https://github.com/poursalavati/SOVAP#Requirements-and-Dependencies)
+ - [Installation](https://github.com/poursalavati/SOVAP#Installation)
+ - [Running the Pipeline - Normal Mode](https://github.com/poursalavati/SOVAP#Running-the-Pipeline---Normal-Mode)
+ - [Running the Pipeline - Batch Mode](https://github.com/poursalavati/SOVAP#Running-the-Pipeline---Batch Mode)
+ - [Databases](https://github.com/poursalavati/SOVAP#Databases)
+ - [Outputs](https://github.com/poursalavati/SOVAP#Outputs)
+ - [Citation](https://github.com/poursalavati/SOVAP#Citation)
+ - [Tools citations](https://github.com/poursalavati/SOVAP#Tools-citations)
+ 
 
 #### Description
 The study of viral communities in complex environmental samples, such as **soil**, can provide valuable insights into the diversity and functions of viral communities in the ecosystem. However, processing and analyzing of virome data can be a challenging task that requires the integration of various computational tools and techniques.
@@ -21,7 +30,7 @@ The **batch-mode** script allows for the processing of multiple datasets using t
 ## Requirements and Dependencies
 To successfully run the SOVAP pipeline, your system must have the necessary software installed and accessible through the system's path:
 
-  - [Python=3.8](https://www.python.org/downloads/)
+ - [Python=3.8](https://www.python.org/downloads/)
  - [geNomad](https://github.com/apcamargo/genomad)
  - [DIAMOND](https://github.com/bbuchfink/diamond)
  - [MEGAN](http://megan.informatik.uni-tuebingen.de/)
