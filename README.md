@@ -233,7 +233,10 @@ Here is a tree diagram that shows the directory structure of the "outputs" direc
 ## Citation
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7700081.svg)](https://doi.org/10.5281/zenodo.7700081)
 
->Poursalavati A. poursalavati/SOVAP: SOVAP v1.3.0 (v1.3.0). Zenodo. 2023; 10.5281/zenodo.7700081.
+>Poursalavati A. (2023). SOVAP v.1.3 : Soil Virome Analysis Pipeline (1.3). Zenodo. https://doi.org/10.5281/zenodo.7700081
+
+### Export
+[BibTeX](https://zenodo.org/record/7700081/export/hx) , [CSL](https://zenodo.org/record/7700081/export/csl) , [DataCite](https://zenodo.org/record/7700081/export/dcite4) , [Dublin Core](https://zenodo.org/record/7700081/export/xd) , [DCAT](https://zenodo.org/record/7700081/export/dcat) , [JSON](https://zenodo.org/record/7700081/export/json) , [JSON-LD](https://zenodo.org/record/7700081/export/schemaorg_jsonld) , [GeoJSON](https://zenodo.org/record/7700081/export/geojson) , [MARCXML](https://zenodo.org/record/7700081/export/xm) , [Mendeley](https://www.mendeley.com/import/?url=https://zenodo.org/record/7700081)
 
 ## Tools citations
 
