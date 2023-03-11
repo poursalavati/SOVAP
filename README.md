@@ -44,6 +44,15 @@ Add the required channels:
 
 Then the easiest way to install the required tools and libraries is using conda yaml files to create seperate environments:
 
+Clone the repository:
+	
+```
+git clone https://github.com/poursalavati/SOVAP.git
+  
+cd SOVAP
+```
+
+
     conda env create -f centrifuge.yml
     conda env create -f megan.yml
     conda env create -f genomad.yml
@@ -65,15 +74,7 @@ or using conda install command:
 To run the SOVAP pipeline, you can use the `Run_SOVAP.py` provided. 
 Here are the steps to run the pipeline:
 
-1.  Clone the repository:
-	
-```
-git clone https://github.com/poursalavati/SOVAP.git
-  
-cd SOVAP
-```
-	
-2.  Activate the Conda environment:  
+1.  Activate the Conda environment:  
 The order of activating the environments is important and prevents errors in pipeline execution.  
 
 ```
@@ -83,22 +84,22 @@ conda activate --stack genomad
 conda activate --stack SOVAP
 ```
 	
-3.  Run the SOVAP pipeline in normal mode:
+2.  Run the SOVAP pipeline in normal mode:
 
 ```
-python Run_SOVAP.py
+python ./Run_SOVAP.py
 ```
 
 Example command - 1 (IMG/VR database):
 
 ```
-python Run_SOVAP.py -r1 Virome_R1_001.fastq.gz -r2 Virome_R2_001.fastq.gz -t 25 -x centrifuge/p_compressed/p_compressed -g genomad_db/ -d Diamond/IMGVR.dmnd --end_to_end
+python ./Run_SOVAP.py -r1 Virome_R1_001.fastq.gz -r2 Virome_R2_001.fastq.gz -t 25 -x centrifuge/p_compressed/p_compressed -g genomad_db/ -d Diamond/IMGVR.dmnd --end_to_end
 ```
 
 Example command - 2 (NCBI database + DIAMOND-MEGAN):
 
 ```
-python Run_SOVAP.py -r1 Virome_R1_001.fastq.gz -r2 Virome_R2_001.fastq.gz -t 25 -x centrifuge/p_compressed/p_compressed -g genomad_db/ -d Diamond/DIAMOND_viral_database_GB.dmnd -md megan-map/megan-map-Feb2022.db --megan --end_to_end
+python ./Run_SOVAP.py -r1 Virome_R1_001.fastq.gz -r2 Virome_R2_001.fastq.gz -t 25 -x centrifuge/p_compressed/p_compressed -g genomad_db/ -d Diamond/DIAMOND_viral_database_GB.dmnd -md megan-map/megan-map-Feb2022.db --megan --end_to_end
 ```
 
 <img src="https://user-images.githubusercontent.com/35867448/222979484-e5838152-c2b0-4895-b55c-14afcc99a2e6.png" alt= “” height="450">
@@ -114,20 +115,20 @@ To run the SOVAP pipeline in batch mode you can use the `SOVAP_BatchMode.py`.
 > Note: To run in batch mode, both scripts should be in the same directory
 
 ```
-python SOVAP_BatchMode.py
+python ./SOVAP_BatchMode.py
 ```
 
 Example command - 1 (IMG/VR database - Assuming that the current folder contains multiple paired-end fastq files):
 
 ```
-python SOVAP_BatchMode.py -i . -o .  -t 25 -x centrifuge/p_compressed/p_compressed -g genomad_db/ -d Diamond/IMGVR.dmnd --end_to_end
+python ./SOVAP_BatchMode.py -i . -o .  -t 25 -x centrifuge/p_compressed/p_compressed -g genomad_db/ -d Diamond/IMGVR.dmnd --end_to_end
 ```
 
 
 Example command - 2 (NCBI database + DIAMOND-MEGAN - Assuming that the current folder contains multiple paired-end fastq files):
 
 ```
-python SOVAP_BatchMode.py -i . -o . -t 25 -x centrifuge/p_compressed/p_compressed -g genomad_db/ -d Diamond/DIAMOND_viral_database_GB.dmnd -md megan-map/megan-map-Feb2022.db --megan --end_to_end
+python ./SOVAP_BatchMode.py -i . -o . -t 25 -x centrifuge/p_compressed/p_compressed -g genomad_db/ -d Diamond/DIAMOND_viral_database_GB.dmnd -md megan-map/megan-map-Feb2022.db --megan --end_to_end
 ```
 
 <img src="https://user-images.githubusercontent.com/35867448/222979327-5fa10861-3491-482c-99f5-27f718ce4c22.png" alt= “” height="450">
