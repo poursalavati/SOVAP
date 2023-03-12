@@ -208,20 +208,20 @@ def calc_abundance(sam_file):
     # Calculate the total count per million
     cpm_factor = 1e6 / sum(counts.values())
     tpm_factor = 1e6 / sum([count/contig_lengths[contig_id] for contig_id, count in counts.items()])
-    fpkm_factor = sum(counts.values()) * 1e9 / (sum(counts.values()) * sum([1/contig_lengths[contig_id] for contig_id in counts.keys()]))
+    fpkm_factor = 1e9 / (sum([count/contig_lengths[contig_id] for contig_id, count in counts.items()]) * sum(counts.values()))
 
-# Write the abundance values to a file
-    with open('5_Clusters_Abundance/abundance.tsv', 'w') as outfile:
-        outfile.write('contig_id\tcount\tcpm\ttpm\tfpkm\n')
+    # Write the abundance values to a file
+    with open('5_TPM/abundance.tsv', 'w') as outfile:
+        outfile.write('contig_id\tcount\tcpm\ttpm\tfpkm\tlength\n')
         for contig_id, count in counts.items():
-        # Calculate the CPM value
+            # Calculate the CPM value
             cpm = count * cpm_factor
-        # Calculate the TPM value
+            # Calculate the TPM value
             tpm = count / contig_lengths[contig_id] * tpm_factor
-        # Calculate the FPKM value
-            fpkm = count * fpkm_factor / contig_lengths[contig_id]
-        # Write the abundance values for the contig to the file
-            outfile.write(f'{contig_id}\t{count}\t{cpm:.2f}\t{tpm:.2f}\t{fpkm:.2f}\n')
+            # Calculate the FPKM value
+            fpkm = count / (contig_lengths[contig_id] / 1000) / (sum(counts.values()) / 1e6) * fpkm_factor
+            # Write the abundance values for the contig to the file
+            outfile.write(f'{contig_id}\t{count}\t{cpm:.2f}\t{tpm:.2f}\t{fpkm:.2f}\t{contig_lengths[contig_id]}\n')
 
 base64_str = "XG5CeSBBYmRvbmFzZXIgUG91cnNhbGF2YXRpXG5Eci4gRmFsbCBWaXJvbG9neSBsYWIgMjAyMiAtIDIwMjNcblxuXDAzM1s5MW1BZ3JpY3VsdHVyZSBhbmQgQWdyaS1Gb29kIENhbmFkYSAoQUFGQylcbkFncmljdWx0dXJlIGV0IEFncm9hbGltZW50YWlyZSBDYW5hZGEgKEFBQylcMDMzWzBtXG5cMDMzWzk2bUFiZG9uYXNlci5Qb3Vyc2FsYXZhdGlAYWdyLmdjLmNhXDAzM1swbVxuXG5cMDMzWzkybUJpb2xvZ3kgRGVwYXJ0bWVudCwgVW5pdmVyc2l0ZSBkZSBTaGVyYnJvb2tlIChVZFMpXDAzM1swbVxuXDAzM1s5Nm1Qb3Vyc2FsYXZhdGkuQWJkb25hc2VyQFVzaGVyYnJvb2tlLmNhXDAzM1swbVxuXHQ="
 version_str = base64.b64decode(base64_str).decode('unicode_escape')
