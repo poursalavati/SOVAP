@@ -211,7 +211,7 @@ def calc_abundance(sam_file):
     fpkm_factor = 1e9 / (sum([count/contig_lengths[contig_id] for contig_id, count in counts.items()]) * sum(counts.values()))
 
     # Write the abundance values to a file
-    with open('5_TPM/abundance.tsv', 'w') as outfile:
+    with open('5_Clusters_Abundance/abundance.tsv', 'w') as outfile:
         outfile.write('contig_id\tcount\tcpm\ttpm\tfpkm\tlength\n')
         for contig_id, count in counts.items():
             # Calculate the CPM value
