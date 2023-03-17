@@ -41,6 +41,7 @@ To successfully run the SOVAP pipeline, your system must have the necessary soft
  - [bwa=0.7.17](https://github.com/lh3/bwa) 
  - [CD-HIT=4.8.1](http://cd-hit.org/)
  - [Centrifuge=1.0.4](https://ccb.jhu.edu/software/centrifuge/)
+ - [Recentrifuge=1.0.4](http://www.recentrifuge.org/)
 
 ## Installation
 
@@ -71,7 +72,7 @@ cd SOVAP
     
 or using conda install command:
 
-    conda create -n centrifuge centrifuge=1.0.4
+    conda create -n centrifuge centrifuge=1.0.4 recentrifuge=1.10.0
     conda create -n megan megan
     conda create -n genomad genomad
     conda create -n SOVAP python=3.8 seqkit samtools=1.15.1 fastp=0.23.2 megahit bwa=0.7.17 diamond cd-hit=4.8.1
@@ -246,6 +247,7 @@ Here is a tree diagram that shows the directory structure of the "outputs" direc
 |DIAMOND|[Link](https://github.com/bbuchfink/diamond)  |[Paper](https://doi.org/10.1038/nmeth.3176)
 |MEGAN|[Link](http://megan.informatik.uni-tuebingen.de/)  |[Paper](https://doi.org/10.1186/s13062-018-0208-7)
 |Centrifuge|[Link](https://ccb.jhu.edu/software/centrifuge/)  |[Paper](https://doi.org/10.1101/gr.210641.116)
+|Recentrifuge|[Link](http://www.recentrifuge.org/)  |[Paper](https://doi.org/10.1371/journal.pcbi.1006967)
 |DIAMOND-MEGAN|[Link](https://uni-tuebingen.de/fakultaeten/mathematisch-naturwissenschaftliche-fakultaet/fachbereiche/informatik/lehrstuehle/algorithms-in-bioinformatics/software/megan6/)  |[Paper](https://doi.org/10.1002/cpz1.59)
 |Fastp|[Link](https://github.com/OpenGene/fastp)  |[Paper](https://doi.org/10.1093/bioinformatics/bty560)
 |Megahit|[Link](https://github.com/voutcn/megahit)  |[Paper](https://doi.org/10.1093/bioinformatics/btv033)
