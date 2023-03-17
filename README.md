@@ -41,7 +41,7 @@ To successfully run the SOVAP pipeline, your system must have the necessary soft
  - [bwa=0.7.17](https://github.com/lh3/bwa) 
  - [CD-HIT=4.8.1](http://cd-hit.org/)
  - [Centrifuge=1.0.4](https://ccb.jhu.edu/software/centrifuge/)
- - [Recentrifuge=1.0.4](http://www.recentrifuge.org/)
+ - [Recentrifuge=1.10.0](http://www.recentrifuge.org/)
 
 ## Installation
 
