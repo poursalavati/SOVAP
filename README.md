@@ -25,8 +25,14 @@ The integration of these tools offers a reliable and effective means of taxonomy
 
 By integrating the SOVAP pipeline with **IMG/VR** and **geNomad**, it is possible to identify a wider range of viruses, including those that were previously unknown.
 
-The **batch-mode** script allows for the processing of multiple datasets using the SOVAP pipeline. This feature is particularly useful for **large-scale** analyses, such as those involving multiple environmental samples or large sequencing datasets.
-
+The **batch-mode** script allows for the processing of multiple datasets using the SOVAP pipeline. This feature is particularly useful for **large-scale** analyses, such as those involving multiple environmental samples or large sequencing datasets.  
+```
+The following features are coming soon:
+The new approach to analyze using both Diamond Databases simultaneously (Genbank and then IMG/VR)
+Add Recentrifuge to analyze centrifuge outputs and visualize them
+Add Spades to the assembly step, so user can choose between Spades and Megahit
+Add removing specific host reads before Centrifuge (using BBDuk)
+```
 ## Requirements and Dependencies
 To successfully run the SOVAP pipeline, your system must have the necessary software installed and accessible through the system's path:
 
