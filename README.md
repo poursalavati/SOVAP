@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/35867448/230953023-dd59a381-5873-4cc4-825b-b35338e370d5.svg" alt="" height="130">
+</p>  
+
 # SOVAP v.1.3
 ## _Soil Virome Analysis Pipeline_
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7700081.svg)](https://doi.org/10.5281/zenodo.7700081)
