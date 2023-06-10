@@ -208,7 +208,7 @@ def calc_abundance(sam_file):
     # Calculate the total count per million
     cpm_factor = 1e6 / sum(counts.values())
     tpm_factor = 1e6 / sum([count/contig_lengths[contig_id] for contig_id, count in counts.items()])
-    fpkm_factor = 1e9 / (sum([count/contig_lengths[contig_id] for contig_id, count in counts.items()]) * sum(counts.values()))
+    fpkm_factor = 1e9 / sum(counts.values())
 
     # Write the abundance values to a file
     with open('5_Clusters_Abundance/abundance.tsv', 'w') as outfile:
@@ -219,7 +219,7 @@ def calc_abundance(sam_file):
             # Calculate the TPM value
             tpm = count / contig_lengths[contig_id] * tpm_factor
             # Calculate the FPKM value
-            fpkm = count / (contig_lengths[contig_id] / 1000) / (sum(counts.values()) / 1e6) * fpkm_factor
+            fpkm = (count / contig_lengths[contig_id]) * fpkm_factor
             # Write the abundance values for the contig to the file
             outfile.write(f'{contig_id}\t{count}\t{cpm:.2f}\t{tpm:.2f}\t{fpkm:.2f}\t{contig_lengths[contig_id]}\n')
 
