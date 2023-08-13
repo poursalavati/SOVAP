@@ -24,8 +24,10 @@ The study of viral communities in complex environmental samples, such as **soil*
 To address these challenges, we have developed **SOVAP** pipeline that utilizes a suite of state-of-the-art tools for processing, analysis, and annotation viromics and metagenomics data. 
 
 It utilizes various tools such as **Fastp** and **Centrifuge** for preprocessing and contamination removal, **geNomad**, **Diamond** and **Megan** for identification and annotation of viral contigs which are assembled and clustered using **Megahit** and **CD-HIT**. Additionally, this pipeline provides an **estimate of the abundance** of viral contigs, allowing for a more comprehensive understanding of the virome within the sample. 
-The integration of these tools offers a reliable and effective means of taxonomy classification and annotation of viral contigs, aiding researchers in gaining insight into the composition and function of the virome within the analyzed sample.
-<img src="https://user-images.githubusercontent.com/35867448/222940533-7fc0776c-4518-48e7-9d81-2d6f7ef92f64.png" alt= “” height="500">
+The integration of these tools offers a reliable and effective means of taxonomy classification and annotation of viral contigs, aiding researchers in gaining insight into the composition and function of the virome within the analyzed sample.  
+  <p align="center">
+  <img src="https://user-images.githubusercontent.com/35867448/222940533-7fc0776c-4518-48e7-9d81-2d6f7ef92f64.png" alt= “” height="500">
+</p>  
 
 By integrating the SOVAP pipeline with **IMG/VR** and **geNomad**, it is possible to identify a wider range of viruses, including those that were previously unknown.
 
