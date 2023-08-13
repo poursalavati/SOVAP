@@ -267,11 +267,3 @@ Here is a tree diagram that shows the directory structure of the "outputs" direc
 |CD-HIT|[Link](http://cd-hit.org/)  |[Paper](https://doi.org/10.1093/bioinformatics/bts565)
 |Seqkit|[Link](https://bioinf.shenwei.me/seqkit/)  |[Paper](https://doi.org/10.1371/journal.pone.0163962)
 |Samtools|[Link](http://www.htslib.org/)  |[Paper](https://doi.org/10.1371/journal.pone.0163962)|
-
-
-<script>
-var lowercasePath = window.location.pathname.toLowerCase();
-if (lowercasePath === '/sovap/' || lowercasePath === '/SOVAP/') {
-  window.location.href = '/SOVAP/';
-}
-</script>
