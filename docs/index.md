@@ -1,17 +1,3 @@
----
-layout: default
-redirect_from:
-  - /sovap/
-  - /SOVAP/
----
-
-<script>
-if (window.location.pathname.toLowerCase() === "/sovap/") {
-  window.location.replace("/SOVAP/");
-}
-</script>
-
-
   <p align="center">
   <img src="https://user-images.githubusercontent.com/35867448/230953023-dd59a381-5873-4cc4-825b-b35338e370d5.svg" alt="" height="130">
 </p>  
