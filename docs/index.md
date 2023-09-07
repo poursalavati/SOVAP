@@ -125,9 +125,9 @@ Example command - 2 (NCBI database + DIAMOND-MEGAN):
 ```
 python ./Run_SOVAP.py -r1 Virome_R1_001.fastq.gz -r2 Virome_R2_001.fastq.gz -t 25 -x centrifuge/p_compressed/p_compressed -g genomad_db/ -d Diamond/DIAMOND_viral_database_GB.dmnd -md megan-map/megan-map-Feb2022.db --megan --end_to_end
 ```
-
-<img src="https://user-images.githubusercontent.com/35867448/222979484-e5838152-c2b0-4895-b55c-14afcc99a2e6.png" alt= “” height="450">
-
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/35867448/222979484-e5838152-c2b0-4895-b55c-14afcc99a2e6.png" alt= “” height="450">
+</p>
 
 ## Running the Pipeline - Batch Mode
 
