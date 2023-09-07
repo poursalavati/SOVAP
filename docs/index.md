@@ -153,9 +153,9 @@ Example command - 2 (NCBI database + DIAMOND-MEGAN - Assuming that the current f
 
 ```
 python ./SOVAP_BatchMode.py -i . -o . -t 25 -x centrifuge/p_compressed/p_compressed -g genomad_db/ -d Diamond/DIAMOND_viral_database_GB.dmnd -md megan-map/megan-map-Feb2022.db --megan --end_to_end
-```
+```  
 
-<img src="https://user-images.githubusercontent.com/35867448/222979327-5fa10861-3491-482c-99f5-27f718ce4c22.png" alt= “” height="450">
+<img src="https://user-images.githubusercontent.com/35867448/222979327-5fa10861-3491-482c-99f5-27f718ce4c22.png" alt= “” height="450">  
 
 ## Databases
 
