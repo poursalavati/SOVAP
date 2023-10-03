@@ -270,7 +270,7 @@ def main():
       else:
           print(f"Skipping this step because output already exists")
     # Running Centrifuge
-      print("\033[94m:::> Start Module 2: Contamination subtraction (Bacteria and Archaea classification) <:::\033[0m")
+      print("\033[94m:::> Start Module 2: Contamination subtraction <:::\033[0m")
       # Check if output files exist
       if not os.path.exists("2_CleanReads"):
       # Run Centrifuge
