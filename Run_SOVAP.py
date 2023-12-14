@@ -6,6 +6,7 @@ import sys
 import subprocess
 from collections import defaultdict
 import base64
+import shutil
 
 HELP_MESSAGE = "\033[32mSOVAP: Soil Virome Analysis Pipeline v.1.3\033[0m\n\n\033[33mThis pipeline utilizes a suite of state-of-the-art tools for processing, analysis, and annotation of viromics and metagenomics data\033[0m\n"
 
@@ -180,6 +181,32 @@ def run_tpm(input_file1, mem, threads):
   # Printing the execution time
   print(f"\033[92mClustering and mapping completed in {end_time - start_time:.2f} seconds.\033[0m")
 
+def finaltouch():
+    # Creating output directory
+    output_dir = "SOVAP_output"
+    os.makedirs(output_dir, exist_ok=True)
+
+    # Define file mappings
+    file_mappings = {
+        "6_Diamond_Megan/output.diamond.daa": "Output_Diamond-Megan_SOVAP.daa",
+        "6_Diamond_Megan/aligned.diamond.fa": "Aligned_Diamond-Megan_SOVAP.fa",
+        "6_Diamond_Megan/unaligned.diamond.fa": "Unaligned_DiamondMegan_SOVAP.fa",
+        "5_Clusters_Abundance/abundance.tsv": "Abundance_SOVAP.tsv",
+        "5_Clusters_Abundance/virus_contig_500.fa": "Virus_Contig_SOVAP.fa",
+        "5_Clusters_Abundance/virus_contig_500_clustered.fasta": "Virus_Clustered_Contig_SOVAP.fa",
+        "6_Diamond-Taxonomy/aligned.diamond.fa": "Aligned_IMGVR_SOVAP.fa",
+        "6_Diamond-Taxonomy/unaligned.diamond.fa": "Unaligned_IMGVR_SOVAP.fa",
+        "6_Diamond-Taxonomy/output.diamond.tsv": "Output_IMGVR_SOVAP.fa"
+    }
+
+    # Copy files to SOVAP_output
+    for source_file, destination_file in file_mappings.items():
+        source_path = os.path.join(os.getcwd(), source_file)
+        destination_path = os.path.join(os.getcwd(), output_dir, destination_file)
+
+        if os.path.exists(source_path):
+            shutil.copy(source_path, destination_path)
+
 def calc_abundance(sam_file):
     # Define the counts dictionary to store the read counts for each contig
     counts = defaultdict(int)
@@ -336,8 +363,14 @@ def main():
             run_diamegan("5_Clusters_Abundance/virus_contig_500_clustered.fasta", args.diamond_db, "output.diamond.daa", "unaligned.diamond.fa", "aligned.diamond.fa", args.megan_db, args.threads)
         else:
             print(f"Skipping this step because output already exists")
-        tend_time = time.time()
-        print(f"\n\033[92mSOVAP pipeline finished in {tend_time - tstart_time:.2f} seconds.\033[0m\nPlease look at '0_Logs' folder to access the logs of each step\n")
+      print("\033[94m:::> Final touch <:::\033[0m")
+      # Check if output files exist
+      if not os.path.exists("SOVAP_output"):
+          finaltouch()
+      else:
+          print("Skipping this step because output already exists")
+      tend_time = time.time()
+      print(f"\n\033[92mSOVAP pipeline finished in {tend_time - tstart_time:.2f} seconds.\033[0m\nPlease look at '0_Logs' folder to access the logs of each step\n")
   else:
     # Running Fastp only
       print("Running Fastp...")
