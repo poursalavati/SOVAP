@@ -196,7 +196,7 @@ def finaltouch():
         "5_Clusters_Abundance/virus_contig_500_clustered.fasta": "Virus_Clustered_Contig_SOVAP.fa",
         "6_Diamond-Taxonomy/aligned.diamond.fa": "Aligned_IMGVR_SOVAP.fa",
         "6_Diamond-Taxonomy/unaligned.diamond.fa": "Unaligned_IMGVR_SOVAP.fa",
-        "6_Diamond-Taxonomy/output.diamond.tsv": "Output_IMGVR_SOVAP.fa"
+        "6_Diamond-Taxonomy/output.diamond.tsv": "Output_IMGVR_SOVAP.tsv"
     }
 
     # Copy files to SOVAP_output
