@@ -190,7 +190,7 @@ def finaltouch():
     file_mappings = {
         "6_Diamond_Megan/output.diamond.daa": "Output_Diamond-Megan_SOVAP.daa",
         "6_Diamond_Megan/aligned.diamond.fa": "Aligned_Diamond-Megan_SOVAP.fa",
-        "6_Diamond_Megan/unaligned.diamond.fa": "Unaligned_DiamondMegan_SOVAP.fa",
+        "6_Diamond_Megan/unaligned.diamond.fa": "Unaligned_Diamond-Megan_SOVAP.fa",
         "5_Clusters_Abundance/abundance.tsv": "Abundance_SOVAP.tsv",
         "5_Clusters_Abundance/virus_contig_500.fa": "Virus_Contig_SOVAP.fa",
         "5_Clusters_Abundance/virus_contig_500_clustered.fasta": "Virus_Clustered_Contig_SOVAP.fa",
