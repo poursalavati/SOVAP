@@ -191,12 +191,12 @@ def finaltouch():
         "6_Diamond_Megan/output.diamond.daa": "Output_Diamond-Megan_SOVAP.daa",
         "6_Diamond_Megan/aligned.diamond.fa": "Aligned_Diamond-Megan_SOVAP.fa",
         "6_Diamond_Megan/unaligned.diamond.fa": "Unaligned_Diamond-Megan_SOVAP.fa",
-        "5_Clusters_Abundance/abundance.tsv": "Abundance_SOVAP.tsv",
+        "5_Clusters_Abundance/abundance.tsv": "Output_IMGVR_SOVAP.abnd",
         "5_Clusters_Abundance/virus_contig_500.fa": "Virus_Contig_SOVAP.fa",
         "5_Clusters_Abundance/virus_contig_500_clustered.fasta": "Virus_Clustered_Contig_SOVAP.fa",
         "6_Diamond-Taxonomy/aligned.diamond.fa": "Aligned_IMGVR_SOVAP.fa",
         "6_Diamond-Taxonomy/unaligned.diamond.fa": "Unaligned_IMGVR_SOVAP.fa",
-        "6_Diamond-Taxonomy/output.diamond.tsv": "Output_IMGVR_SOVAP.tsv"
+        "6_Diamond-Taxonomy/output.diamond.tsv": "Output_IMGVR_SOVAP.dmnd"
     }
 
     # Copy files to SOVAP_output
