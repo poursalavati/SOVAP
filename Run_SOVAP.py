@@ -162,7 +162,7 @@ def run_tpm(input_file1, mem, threads):
 
   # Defining the command to run TPM and CD-HIT
   command1 = f"seqkit seq -m 500 {input_file1} -o 5_Clusters_Abundance/virus_contig_500.fa -j {threads}"
-  command2 = f"cd-hit -i 5_Clusters_Abundance/virus_contig_500.fa -c 0.95 -G 0 -aS 0.75 -T {threads} -M {mem} -o 5_Clusters_Abundance/virus_contig_500_clustered.fasta"
+  command2 = f"cd-hit-est -i 5_Clusters_Abundance/virus_contig_500.fa -c 0.95 -n 10 -aS 0.85 -T {threads} -M {mem} -o 5_Clusters_Abundance/virus_contig_500_clustered.fasta"
   command3 = f"cat 1_Fastp_Output/* > 1_Fastp_Output/Cat_Trimmed.fq.gz"
   command4 = f"bwa index 5_Clusters_Abundance/virus_contig_500_clustered.fasta"
   command5 = f"bwa mem -t {threads} 5_Clusters_Abundance/virus_contig_500_clustered.fasta 1_Fastp_Output/Cat_Trimmed.fq.gz -o 5_Clusters_Abundance/mapped.sam"
