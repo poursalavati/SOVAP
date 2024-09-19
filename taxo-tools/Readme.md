@@ -11,10 +11,10 @@ This folder contains two scripts designed for post-SOVAP analysis. These tools a
 ## Scripts Overview
 
 ### 1. **Prompt-based Script**
-This script [SOVAP_taxo_merge_prompt.sh] interacts with the user, asking for the folder name, mode (single or batch), and the desired operation (lineage retrieval, merging, or both). It supports tab-autocomplete for file paths, making it easier to navigate and select files. Ideal for users who prefer guided inputs.
+This script [**SOVAP_taxo_merge_prompt.sh**] interacts with the user, asking for the folder name, mode (single or batch), and the desired operation (lineage retrieval, merging, or both). It supports tab-autocomplete for file paths, making it easier to navigate and select files. Ideal for users who prefer guided inputs.
 
 ### 2. **Flag-based Script**
-This script [SOVAP_taxo_merge_auto.sh] accepts command-line arguments and flags, allowing fully automated execution. No prompts are given, and the user must specify all options directly when running the script.
+This script [**SOVAP_taxo_merge_auto.sh**] accepts command-line arguments and flags, allowing fully automated execution. No prompts are given, and the user must specify all options directly when running the script.
 
 Both scripts are designed to support **lineage assignment** using a sorted `IMGVR_all_Sequence_information.tsv` file and **merging** with abundance data for further downstream analysis.
 
@@ -104,12 +104,14 @@ To see detailed help:
 ### Workflow Overview:
 
 After completing **SOVAP** analysis:
-1. Run one of these scripts to:
-   - Retrieve taxonomies to the contigs based on a sorted `IMGVR_all_Sequence_information.tsv` file.
-   - Merge taxonomy information with abundance data for further downstream analysis.
-2. Use the output files for your subsequent analyses, such as diversity metrics, visualizations, or comparative studies.
+
+1. Use one of these scripts to:
+   - Retrieve taxonomies already assigned to contigs, using a sorted `IMGVR_all_Sequence_information.tsv` file.
+   - Merge retrieved taxonomy information with abundance data to prepare for further downstream analysis.
+
+2. The generated output files can then be used for subsequent analyses, including diversity metrics, visualizations, or comparative studies.
 
 ---
 
-These tools provide flexibility for users who prefer either **interactive** or **non-interactive** processing and are specifically tailored for use after **SOVAP** has been run.
+These tools provide flexibility for users who prefer either **interactive** or **non-interactive** processing and are specifically tailored for use after **SOVAP** has been run.  
 
